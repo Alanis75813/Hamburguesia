@@ -1,0 +1,173 @@
+.abrir-carrinho{
+    position:fixed;
+    top:20px;
+    right:20px;
+    background:#FFD700;
+    padding:10px 15px;
+    border-radius:30px;
+    font-weight:bold;
+}
+
+#contador{
+    background:#A32939;
+    color:white;
+    padding:3px 8px;
+    border-radius:50%;
+    margin-left:5px;
+}
+
+.carrinho li{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.controles{
+    display:flex;
+    gap:5px;
+    align-items:center;
+}
+
+.remover{
+    background:red;
+    color:white;
+    border:none;
+    cursor:pointer;
+    padding:5px;
+    border-radius:5px;
+}
+
+#finalizar{
+    width:100%;
+    margin-top:20px;
+    background:#A32939;
+    color:white;
+    font-weight:bold;
+    padding:12px;
+    border-radius:8px;
+}
+
+.categoria{
+    background: linear-gradient(#A32939, #7a1f2c);
+    padding:50px;
+    margin:50px;
+    border-radius:20px;
+}
+
+.categoria h2{
+    color:#FFD700;
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+/* GRID */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
+    gap:20px;
+}
+
+/* CARD */
+
+.card{
+    background:#ffffff10;
+    backdrop-filter: blur(5px);
+    padding:80px;
+    border-radius:10px;
+    text-align:center;
+    color:white;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:scale(1.05);
+}
+
+.card img{
+    width:100px;
+    height:200px;
+    object-fit:contain;
+}
+
+.info p{
+    font-size:14px;
+}
+
+/* BOTÃO */
+
+.card button{
+    margin-top:40px;
+    background:#FFD700;
+    color:#A32939;
+    font-weight:bold;
+}
+
+nav a{
+    margin-left: 30px;
+    text-decoration: none;
+    color: #A32939;
+    font-weight: bold;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: #dbb068;
+}
+
+p{
+    font-size: 20px;
+}
+
+body{
+   background-color: #dfc495; 
+}
+
+.modal{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.8);
+    display:none;
+    justify-content:center;
+    align-items:center;
+}
+
+.modal.ativo{
+    display:flex;
+}
+
+.modal-content{
+    background:#A32939;
+    padding:30px;
+    border-radius:15px;
+    width:80%;
+    max-height:80%;
+    overflow:auto;
+    animation:zoom 0.3s;
+}
+
+@keyframes zoom{
+    from{transform:scale(0.7);}
+    to{transform:scale(1);}
+}
+
+#fecharModal{
+    float:right;
+    cursor:pointer;
+    color:white;
+    font-size:20px;
+}

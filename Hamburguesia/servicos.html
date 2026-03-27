@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hamburguesia</title>
+
+<link rel="stylesheet" href="servicos.css">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <a href="sobre.html" target="_blank" >Sobre Nós</a>
+        <a href="servicos.html" target="_blank" >Serviços</a>
+        <a href="cadastro.html" target="_blank" >Criar Conta</a>
+    </nav>
+</header>
+
+<button id="finalizar">Finalizar Pedido🛒</button>
+
+<section class="categoria">
+
+    <h2>CARDÁPIO</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="card categoria-card" data-categoria="bebidas"></div>
+            <img src="mídias/bebidas.webp">
+            <div class="info">
+                <p>Bebidas</p>
+            </div>
+            <button class="add" data-nome="Bebidas" data-preco="10">Abrir opções</button>
+        </div>
+
+        <div class="card">
+            <div class="card categoria-card" data-categoria="entradas"></div>
+            <img src="mídias/entradas e acompanhamentos.webp">
+            <div class="info">
+                <p>Entradas</p>
+            </div>
+            <button class="add" data-nome="Entradas" data-preco="15">Abrir opções</button>
+        </div>
+
+        <div class="card">
+            <div class="card categoria-card" data-categoria="artesanais"></div>
+            <img src="mídias/hambúrgueres artesanais e veggies.webp">
+            <div class="info">
+                <p>Hambúrgueres artesanais e veggies</p>
+            </div>
+            <button class="add" data-nome="Artesanais" data-preco="20">Abrir opções</button>
+        </div>
+
+        <div class="card">
+            <div class="card categoria-card" data-categoria="clássicos"></div>
+            <img src="mídias/hambúrgueres clássicos.webp">
+            <div class="info">
+                <p>Clássicos</p>
+            </div>
+            <button class="add" data-nome="Clássicos" data-preco="8">Abrir opções</button>
+        </div>
+
+    </div>
+
+    <div class="modal" id="modal">
+    <div class="modal-content">
+        <span id="fecharModal">✖</span>
+        <h2 id="tituloModal"></h2>
+
+        <div id="itensModal" class="cards"></div>
+    </div>
+</div>
+
+</section>
+
+<script src="servicos.js"></script>
+</body>
+</html>
